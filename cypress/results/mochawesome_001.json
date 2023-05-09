@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-08T20:40:24.196Z",
+    "end": "2023-05-08T20:40:36.270Z",
+    "duration": 12074,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb698a1c-dded-4369-89a0-f5e0958101d7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\desafio.cy.js",
+      "file": "cypress\\e2e\\desafio.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6de87a81-ebe6-43e2-8576-e0645ffc4df6",
+          "title": "pages objet model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "agregar 5 tareas",
+              "fullTitle": "pages objet model agregar 5 tareas",
+              "timedOut": null,
+              "duration": 5131,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "todoListPage.escribirTarea(loginData.test1.tareas.tarea1);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea2);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea3);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea4);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea5);\ntodoListPage.clickSendTaskButton();",
+              "err": {},
+              "uuid": "22354840-d34d-4435-a65d-5d6acb399329",
+              "parentUUID": "6de87a81-ebe6-43e2-8576-e0645ffc4df6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deberia validar los botones",
+              "fullTitle": "pages objet model deberia validar los botones",
+              "timedOut": null,
+              "duration": 1560,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//homePage.clickTodolistLick();\ncy.get('#all').should('exist');\ncy.get('#completed').should('exist');\ncy.get('#active').should('exist');\ncy.get('#removeAll').should('exist');",
+              "err": {},
+              "uuid": "5ca7ffdb-0aaf-4183-9f72-2167ae02ffff",
+              "parentUUID": "6de87a81-ebe6-43e2-8576-e0645ffc4df6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "permite agregar 2 tareas y completar la ultima tarea ingresada",
+              "fullTitle": "pages objet model permite agregar 2 tareas y completar la ultima tarea ingresada",
+              "timedOut": null,
+              "duration": 2808,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "todoListPage.escribirTarea(loginData.test1.tareas.tarea1);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea2);\ntodoListPage.clickSendTaskButton();\ntodoListPage.clickCompletedButton();\ntodoListPage.clickAllButton();\ntodoListPage.borrarTarea2();",
+              "err": {},
+              "uuid": "a7dadfc8-6d8d-4b2f-a264-85d6a5516432",
+              "parentUUID": "6de87a81-ebe6-43e2-8576-e0645ffc4df6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "permite agregar 2 tareas y completar la primera ingresada",
+              "fullTitle": "pages objet model permite agregar 2 tareas y completar la primera ingresada",
+              "timedOut": null,
+              "duration": 2494,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "todoListPage.escribirTarea(loginData.test1.tareas.tarea1);\ntodoListPage.clickSendTaskButton();\ntodoListPage.escribirTarea(loginData.test1.tareas.tarea2);\ntodoListPage.clickSendTaskButton();\ntodoListPage.clickCompletedButton();\ntodoListPage.clickAllButton();\ntodoListPage.borrarTarea1();",
+              "err": {},
+              "uuid": "d2f6cd48-e43b-41ed-ac86-2228ea74098b",
+              "parentUUID": "6de87a81-ebe6-43e2-8576-e0645ffc4df6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22354840-d34d-4435-a65d-5d6acb399329",
+            "5ca7ffdb-0aaf-4183-9f72-2167ae02ffff",
+            "a7dadfc8-6d8d-4b2f-a264-85d6a5516432",
+            "d2f6cd48-e43b-41ed-ac86-2228ea74098b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11993,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
