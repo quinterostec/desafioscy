@@ -34,5 +34,9 @@ describe('pages objet model', () => {
         cy.get('[class="css-lbapbk"]').screenshot('botones del home page');
     });
 
+    it('deberia sacar screen al nav del home page',()=>{
+      cy.get('.css-1if13rj').screenshot('nav del home page');
+  });
+
 });
 //escribviendo npm test ya corre  cypress
