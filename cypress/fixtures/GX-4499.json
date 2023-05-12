@@ -1,0 +1,14 @@
+{
+    "producto":{
+        "nombre1": "White Pants",
+        "nombre2" : "Red Cap"
+    },
+    "checkout":{
+        "nombre":"Guillermo",
+        "apellido": "Quinteros",
+        "numeroTarjeta" : "123456"
+    }
+    
+
+
+}
