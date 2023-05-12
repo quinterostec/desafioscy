@@ -37,6 +37,9 @@ describe('pages objet model', () => {
     it('deberia sacar screen al nav del home page',()=>{
       cy.get('.css-1if13rj').screenshot('nav del home page');
   });
+  it('deberia sacar screen al boton todo list',()=>{
+    cy.get('.css-lbapbk > :nth-child(1)').screenshot('boton todo list');
+    });
 
 });
 //escribviendo npm test ya corre  cypress
